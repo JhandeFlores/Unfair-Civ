@@ -6,7 +6,7 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 BuildingIcons/Breeders
   rotate: false
-  xy: 112, 4
+  xy: 100, 40
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
