@@ -1,17 +1,152 @@
 [
+	//Arkanthéa Units
+	
 	{
-		"name": "Phasers",
-		"unitType": "Ranged",
-		"uniqueTo": "Aliens",
-		"replaces": "Machine Gun",
+		"name": "Elitonares",
+		"unitType": "Sword",
+		"uniqueTo": "Arkanthéa",
+		"replaces": "Longswordsman",
+		"movement": 3,
+		"strength": 25,
+		"cost": 150,
+		"requiredTech": "Steel",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"promotions": ["Shock I"],
+		"attackSound": "metalhit"
+	},
+
+	//Zamutra Units
+	
+	{
+		"name": "Thamusera",
+		"unitType": "Sword",
+		"uniqueTo": "Zamutra",
+		"replaces": "Swordsman",
+		"movement": 2
+		"strength": 10,
+		"cost": 50,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"uniques": ["May upgrade to [Longswordsman] through ruins-like effects"],
+		"obsoleteTech": "Steel",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 10,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Zuleptares",
+		"unitType": "Sword",
+		"uniqueTo": "Zamutra",
+		"replaces": "Longswordsman",
 		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 2,
-		"cost": 500,
-		"requiredTech": "Ballistics",
-		"requiredResource": "Uranium",
-		"promotions": ["Logistics","Accuracy I"],
-		"attackSound": "phasers"
+		"strength": 23,
+		"cost": 230,
+		"requiredTech": "Steel",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"uniques": ["Heals [2] damage if it kills a unit"],
+		"attackSound": "metalhit"
+	},
+
+       //Fenyang Grandasty Units
+	
+	{
+		"name": "Qiuang Mao",
+		"uniqueTo": "Fenyang Grandasty",
+		"replaces": "Pikeman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 20,
+		"cost": 110,
+		"requiredTech": "Civil Service",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"promotions": ["Shock I"],
+		"upgradesTo": "Lancer",
+		"obsoleteTech": "Metallurgy",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Confictus",
+		"unitType": "Civilian",
+		"uniqueTo": "Fenyang Grandasty",
+		"replaces": "Great Prophet",
+		"uniques": [
+            "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            "Can Spread Religion <for [3] movement> <[5] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+            "Is part of Great Person group [Prophet]",
+			"May enter foreign tiles without open borders", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"],
+		"movement": 3,
+		"religiousStrength": 1100
+	},
+	{
+		"name": "F.M.S. Qianlong",
+		"unitType": "Ranged Water",
+		"replaces": "Frigate",
+		"uniqueTo": "Fenyang Grandasty",
+		"movement": 7,
+		"strength": 27,
+		"rangedStrength": 30,
+		"cost": 200,
+		"requiredResource": "Iron",
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 35,
+		"attackSound": "F.M.S. Qianlong",
+	},
+
+	//Clun State Of Kardesh Units
+	
+	{
+		"name": "Kardeshian Cavalry",
+		"unitType": "Archery",
+		"replaces": "Chariot Archer",
+		"uniqueTo": "Clun State of Kardesh",
+		"movement": 6,
+		"strength": 8,
+		"rangedStrength": 12,
+		"cost": 50,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "Never appears as a Barbarian unit", "Can move after attacking"],
+		"hurryCostModifier": 25,
+		"attackSound": "Kardeshian Cavalry"
+	},
+	{
+		"name": "Goliath's Shot",
+		"unitType": "Siege",
+		"replaces": "Trebuchet",
+		"uniqueTo": "Clun State of Kardesh",
+		"movement": 3,
+		"strength": 15,
+		"rangedStrength": 16,
+		"cost": 160,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": ["[+205]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","Never appears as a Barbarian unit","Destroys tile improvements when attacking","[2] XP gained from combat"],
+		"attackSound": "Goliath"
+	},
+	{
+		"name": "Precision Musket",
+		"replaces": "Musketman",
+		"uniqueTo": "Jhandrix Empire",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 29,
+		"cost": 170,
+		"uniques": ["[1] additional attacks per turn"],
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"obsoleteTech": "Rifling",
+		"attackSound": "Precision Musket"
 	}
 ]
